@@ -83,7 +83,7 @@ let persons = [
         })
     }
 
-    //check if name already exists
+    //check if name already exists in the persons list
     names = persons.map(p => p.name)
 
     for (let i = 0; i < names.length; i++) {
