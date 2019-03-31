@@ -1,13 +1,12 @@
-/*Tee Node-sovellus, joka tarjoaa osoitteessa http://localhost:3001/api/persons
-kovakoodatun taulukon puhelinnumerotietoja*/
-
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
+const cors = require('cors')
 
 app.use(bodyParser.json())
 app.use(morgan('tiny'))
+app.use(cors())
 
 let persons = [
       {
